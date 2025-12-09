@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #181D33;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 95vh;
+}
+
+.container{
+    width: 25%;
+    height: auto;
+    background-color: #1F244D;
+    box-shadow: 40px 50px 50px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.card-head{
+    padding: 20px;
+}
+.card-head img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-head h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.card-head p{
+    font-size: 16px;
+    padding-top: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.eth-time {
+    display:flex;
+    justify-content: space-between;
+}
+.eth-time p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.eth{
+    display:flex;
+    align-self: center;
+}
+
+.eth img{
+    width:20%;
+    height:50%;
+    margin-top: 14px;
+    margin-right:10px;
+
+}
+.time{
+    border-radius: 10px;
+    display:flex;
+    align-self: center;
+}
+
+.time img{
+    width:16%;
+    height:35%;
+    margin-top: 18px;
+    margin-right:10px;
+}
+
+hr {
+    margin-top: 20px ;
+}
+
+.footer{
+    padding: 0 20px 20px 20px;
+    display: flex;
+}
+.footer img{
+    width: 8%;
+    height:8%;
+    margin-right: 10px;
+    border: 1px solid #10658F;
+    border-radius: 20px;
+}
+.footer p{
+    align-self: center;
+    color: #fff;
+}
+.footer span{
+
+    color: #fff;
+    opacity: 0.4;
+}
+
+
+/* ============================
+   TABLET (max-width: 1024px)
+=============================== */
+@media (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+    .card-head h3 {
+        font-size: 22px;
+    }
+    .card-head p,
+    .eth-time p {
+        font-size: 15px;
+    }
+}
+
+/* ============================
+   MOBILE LARGE (max-width: 768px)
+=============================== */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 40px 0;
+    }
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+    .footer img {
+        width: 10%;
+        height: 10%;
+    }
+    .card-head h3 {
+        font-size: 20px;
+    }
+}
+
+/* ============================
+   MOBILE SMALL (max-width: 480px)
+=============================== */
+@media (max-width: 480px) {
+    .container {
+        width: 85%;
+    }
+
+    .card-head h3 {
+        font-size: 18px;
+    }
+
+    .card-head p,
+    .eth-time p {
+        font-size: 14px;
+    }
+
+    .eth img,
+    .time img {
+        width: 18px; /* Fix scaling issue */
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .footer img {
+        width: 14%;
+        height: 14%;
+    }
+}
